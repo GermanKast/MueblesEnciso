@@ -1,0 +1,471 @@
+@font-face {
+			    font-family: 'Museo';
+			    src: url('../fonts/museo300-regular-webfont.woff2') format('woff2'),
+			      url('../fonts/museo300-regular-webfont.woff') format('woff');
+			    font-style: normal;
+			    font-weight: 300;
+			}
+
+			@font-face {
+			    font-family: 'Museo';
+			    src: url('../fonts/museo700-regular-webfont.woff2') format('woff2'),
+			      url('../fonts/museo700-regular-webfont.woff') format('woff');
+			    font-style: bold;
+			    font-weight: 700;
+			}
+
+			body
+		    {
+		        margin: 0 auto;
+		        /*text-align: center;*/
+		        background-color: white;
+		        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		    	font-size: 14px;
+		    }
+
+		    a{
+		    	text-decoration: none;
+		    	color: #ccc;
+		    	background: 0 0;
+		    }
+
+	        /*******************************/
+			/*         Navigatioin         */
+			/*******************************/
+			/* Autohide navbar */
+			.slideUp { top:-100px; }
+			.headroom { 
+				-webkit-transition: all 0.4s ease-out;
+				-moz-transition: all 0.4s ease-out;
+				-o-transition: all 0.4s ease-out;
+				transition: all 0.4s ease-out;
+			}
+
+			.navbar { 
+				background:rgba(59,28,22,.85); 
+				padding-top:15px;
+				height: 65px;
+				width: 100%;
+				display: block;
+				position: fixed;
+			    z-index: 1030;
+			    top: 0px;
+			    transition: top ease-in .3s;
+			}
+
+			.hide-navbar{
+				top: -85px;
+			}
+		/*
+			.show-navbar-links{
+				top: 0;
+			}
+		*/
+			.navbar-container{
+				margin: 0;
+			    padding: 0;
+			    width: 100%;
+			    height: 50px;
+			    box-sizing: border-box;
+			}
+
+			.navbar *:focus { outline: 0; }
+			.navbar:hover { background:rgba(59,28,22,1) }
+
+			.navbar-logo{
+				margin: 0 auto;
+				margin-top: 5px;
+				margin-left: 60px;
+				float: left;
+				width: 25%;
+			}
+
+			.navbar-links{
+				margin: 0 auto;
+				width: 75%;
+				text-align: right;
+				padding-top: 20px;
+				padding-right: 50px;
+			}
+
+			.navbar-icon{
+				float: right;
+				margin-top: 10px;
+				margin-right: 80px;
+				display: none;
+			}
+
+			.navbar-links > a {
+				color:rgba(255, 255, 255, .4);
+				margin-right: 15px;
+				margin-left: 15px;
+				text-decoration: none;
+				font-size: 16px;
+			}
+
+			#span-icon-list{
+				display: flex;
+			}
+
+			#span-icon-list > img:hover {background:rgba(0,0,0,1);}
+
+			a:hover, a:focus { background:none; color:white; }
+/*****************************************************************************************************************************/
+			.container{
+				width: 100%;
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			.header-wrap{
+				background: url('../image/main/carpinteria-2-oscuro30.jpg');
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center center;
+				height: 520px;
+				text-align: center;
+				color: white;
+			    font-family: 'Museo', sans-serif, Helvetica, Arial;
+			    font-weight: 700;
+				width: 100%;
+				overflow: hidden;
+			}
+			.header-container{
+				padding-top: 18%;
+				color: white;
+			    font-family: 'Museo', sans-serif, Helvetica, Arial;
+			    font-weight: 700;
+				width: 100%;
+				overflow: hidden;
+			}
+
+			.img-tittle-wraper{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.lead {
+				font-family:'Museo', sans-serif, Helvetica, Arial;
+				font-size:60px;
+				margin-bottom:6px;
+				color:white;
+				line-height:1.15em;
+				font-weight:700;
+			}
+
+			.tagline {
+				color:rgba(255,255,255,0.75);
+				margin-bottom:25px;
+				margin-top: 10px;
+			}
+/************************************************************************************************************************/
+			.divider{
+				background-color:#6d3a30;
+				height: 10px;
+				width: auto;
+			}
+
+			.welcome-container{
+				color: inherit;
+				background-color: #F7F5F4;
+				margin: 0%;
+				width: 100%;
+				padding-top: 10px;
+				padding-bottom: 40px;
+				text-align: center;
+			}
+
+			.welcome{
+				font-family:'Museo', sans-serif, Helvetica, Arial;
+				font-weight:700;
+				font-size:45px;
+				color: #b63d32;
+				margin-bottom: 20px;
+			}
+
+	/************************************************************************************************************************/
+			.catalog-container{
+				background-color: #F7F5F4;
+				width: 100%;
+			}
+
+			.row-catalog{
+			  	margin: 0 auto;
+			  	display: flex;
+			  	flex-direction: row;
+		  		flex-wrap: wrap;
+		  		padding-right: 50px;
+		  		padding-left: 50px;
+		  		padding-bottom: 20px;
+		  		padding-top: 20px;
+			}
+
+			.block-catalog{
+		  		width: 30%;
+		  		height: 300px;
+				background-repeat: no-repeat;
+		  		background-size: cover;
+		 		background-position: center center;
+		  		margin: 0 auto;
+		  		text-align: center;
+			}
+
+			.block-catalog > h3{
+			    font-size: 25px;
+			    padding: 8px 12px;
+			    text-shadow: 2px 2px 3px white;
+			}
+
+
+			.block-catalog:hover{
+				opacity: 0.8;
+			}
+
+			.block-catalog:active{
+				opacity: 0.6;
+			}
+
+	/************************************************************************************************************************/
+			footer{
+				background: #3b1c16;
+			    padding-bottom: 15px;
+			    font-size: 12px;
+			    color: #999;
+			    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+			    line-height: 1.428571429;
+			}
+
+			.row-footer{
+				display: flex;
+				/* align-items por defecto tiene el valor `stretch` */
+				flex-direction: row;
+		  		flex-wrap: wrap;
+			}
+
+			.footer-section{
+				width: 50%;
+				text-align: left;
+			}
+
+			.footer-section > h2{
+				color: #ccc;
+			}
+
+			.inner-footer-section{
+				font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+				font-size: 12px;
+				line-height: 1.428571429;
+				text-align: left;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-right: 50px;
+				padding-left: 50px;
+			}
+
+			.footer-copyright{
+				height: 30px;
+			}
+/****************************************************** ventana modal *********************************************************/
+			:root {
+			  --lightgray: #efefef;
+			  --blue: steelblue;
+			  --white: #fff;
+			  --black: rgba(0, 0, 0, 0.8);
+			  --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+			}
+			 
+			.container-modal > * {
+			  padding: 0;
+			  margin: 0;
+			}
+			 
+			button {
+			  cursor: pointer;
+			  background: transparent;
+			  border: none;
+			  outline: none;
+			  font-size: inherit;
+			}
+
+			.modal-section{
+				height: 15px;
+				overflow: hidden;
+			}
+
+			/*CUSTOM VARIABLES HERE*/
+			.container-modal {
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			  height: 100vh;
+			  font: 16px/1.5 sans-serif;
+			}
+			 
+			.btn-group {
+			  text-align: center;
+			}
+			 /*
+			.open-modal {
+				font-weight: bold;
+				background: var(--blue);
+				color: var(--white);
+				padding: .75rem 1.75rem;
+				margin-bottom: 1rem;
+				border-radius: 5px;
+			}
+			*/
+			/*CUSTOM VARIABLES HERE*/
+ 
+			.modal { 
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 1rem;
+				background: var(--black);
+				cursor: pointer;
+				visibility: hidden;
+				opacity: 0;
+				transition: all 0.35s ease-in;
+			}
+
+			/*CUSTOM VARIABLES HERE*/
+ 
+			.modal-dialog {
+				position: relative;
+				max-width: 800px;
+				max-height: 80vh;
+				border-radius: 5px;
+				background: var(--white);
+				overflow: auto;
+				cursor: default;
+			}
+			/*CUSTOM VARIABLES HERE*/
+ 
+			.modal-dialog > * {
+				padding: 1rem;
+			}
+			 
+			.modal-header,
+			.modal-footer {
+				background: var(--lightgray);
+				width: 800px;
+			}
+			 
+			.modal-header {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			 
+			.modal-header .modal-close {
+				font-size: 1.5rem;
+			}
+			 
+			.modal p + p {
+				margin-top: 1rem;
+			}
+
+			.modal {
+				visibility: hidden;
+				opacity: 0;
+				transition: all 0.35s ease-in;
+			}
+			 
+			.modal.is-visible {
+			 	visibility: visible;
+			 	opacity: 1;
+			}
+
+			.close-modal:hover{
+				background:rgba(0,0,0,0.1);
+			}
+
+			.close-modal:active{
+				background:rgba(0,0,0,0.3);
+			}
+			
+/************************************************************************************************************************/
+			.modal-box-img{
+				width: 20%;
+				height: 200px;
+				/*background-image: url("assets/image/catalog/camas/cama (1).jpg");*/
+				background-repeat: no-repeat;
+		  		background-size: cover;
+		 		background-position: center center;
+		 		margin: 0 auto;
+		 		margin-top: 15px;
+		 		margin-bottom: 15px;
+			}
+
+			.row{
+				display: flex;
+				/* align-items por defecto tiene el valor `stretch` */
+				flex-direction: row;
+		  		flex-wrap: wrap;
+		  		text-align: center;
+			}
+
+			.container-gallery{
+				padding-right: 50px;
+				padding-left: 50px;
+			}
+
+/************************************************************************************************************************/
+
+			@media all and (max-width: 1100px){
+				.header-container{padding-top: 195px;}
+			}
+			@media all and (max-width: 992px){
+				.header-container{height: 320px; padding-top: 100px;}
+				.lead{font-size: 40px;}
+				.box-reasons{width: 50%; margin-top: 30px;}
+				.us-section{width: 100%}
+				.us-raper{margin-top: 0; width: 100%; padding-left: 40px; padding-right: 40px;}
+				.block-catalog{width: 45%;}
+				.modal-box-img{width: 45%}
+				.header-wrap{height: 320px;}
+			}
+			@media all and (max-width: 800px){
+				.box-reasons{width: 100%;}
+				.navbar-links{width: 100%;margin: 0;padding-right: 50px;}
+				.block-catalog{width: 85%;}
+				.modal-box-img{width: 85%; height: 300px;}
+			}
+			@media all and (max-width: 680px){
+				.header-container{min-height: 220px; padding-top: 85px;}
+				.footer-section{width: 100%;}
+			}
+			@media all and (max-width: 580px){
+				.navbar{
+					background:rgba(59,28,22); 
+				}
+				.navbar-icon{display: block;}
+				.navbar-links{
+					background:rgba(59,28,22); 
+					text-align: center;
+					width: 100%;
+					position: relative;	
+				    z-index: -2000;
+				    top: -260px;/*80*/
+				    transition: top ease-in .3s;
+				    display: flex;
+					/* align-items por defecto tiene el valor `stretch` */
+					flex-direction: column;
+			  		flex-wrap: wrap;
+			  		padding: 0;
+			  		padding-top: 15px;
+			  		padding-bottom: 15px;
+
+				}
+				.navbar-links > a{
+					margin-bottom: 15px;
+					margin-top: 15px;
+				}
+			}
+/************************************************************************************************************************/

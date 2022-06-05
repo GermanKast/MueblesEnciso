@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="assets/image/main/icon_ME.png">
+	<title>Muebles Enciso</title>
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/gallerySlider.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<!-- Fixed navbar -->
+	<div class="navbar headroom" id="navbar">
+		<div class="navbar-container">
+			<div class="navbar-logo">
+				<a href="index.html">
+					<img src="assets/image/main/logoME_blanco_sinfondo.png" alt="Muebles Enciso">
+				</a>
+			</div>
+			<div class="navbar-icon">
+				<div id="span-icon-list">
+					<img src="assets/image/icons/icon-list-white.png" width="30px" height="30px">
+				</div>
+			</div>
+			<div class="navbar-links" style="top: -260px;">
+				<a href="#">Inicio</a>
+				<a href="#">Catalogo</a>
+				<a href="#">Contacto</a>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+	<!-- header imagen superior -->
+	<header>
+		<div class="container header-container">
+			<div class="img-tittle-wraper">
+				<img src="assets/image/main/logoMEgrabado_mareda.webp" alt="">
+				<div>
+					<h1 class="lead">MUEBLES ENCISO</h1>
+					<h2 class="tagline">Experiencia y calidad</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="divider"></div>
+	<!-- saludo de bienvenida -->
+	<div class="container welcome-container">
+		<h2 class="welcome">Bienvenidos</h2>
+		<p>Con más de 20 años de experiencia en carpintería y ebanistería, proporcionamos productos de calidad para hogares y empresas.</p>
+	</div>
+	<!-- slider de las imagenes -->
+	<div class="container">
+		<h2 class="gallery-slider-tittle">ALGUNOS DE NUESTROS TRABAJOS</h2>
+		<div class="gallery-slide-box">
+
+			<div class="slides fade" style="display:block">
+				<div class="numbertext">1 / 7</div>
+				<img class="slider-image" src="assets/image/gallery/camas_ME.jpg">
+				<div class="text">Camas</div>
+			</div>
+		
+			<div class="slides fade">
+				<div class="numbertext">2 / 7</div>
+				<img class="slider-image" src="assets/image/gallery/closets2_ME.jpg">
+				<div class="text">Closets</div>
+			</div>
+		
+			<div class="slides fade">
+				<div class="numbertext">3 / 7</div>
+				<img class="slider-image" src="assets/image/gallery/cocinas_ME.jpg">
+				<div class="text">Cocinas</div>
+			</div>
+
+			<div class="slides fade">
+				<div class="numbertext">4 / 7</div>
+				<img class="slider-image" src="assets/image/gallery/comedores_ME.jpg">
+				<div class="text">Comedores</div>
+			</div>
+
+			<div class="slides fade">
+				<div class="numbertext">5 / 7</div>
+				<img class="slider-image" src="assets/image/gallery/baño_ME.jpg">
+				<div class="text">Muebles para baño</div>
+			</div>
+
+			<div class="slides fade">
+				<div class="numbertext">6 / 7</div>
+				<img class="slider-image" src="assets/image/gallery/tv_ME.jpg">
+				<div class="text">Muebles para TV</div>
+			</div>
+
+			<div class="slides fade">
+				<div class="numbertext">7 / 7</div>
+				<img class="slider-image" src="assets/image/gallery/puertas_ME.jpg">
+				<div class="text">Puertas</div>
+			</div>
+		
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+			<span class="dot" onclick="currentSlide(6)"></span>
+			<span class="dot" onclick="currentSlide(7)"></span>
+		</div>
+	</div>
+	<div class="container banner-catalog">
+		<h2>¿Te gustaria ver nuestro catalogo completo?</h2>
+		<button id="btn-show-catalog">Click Aquí</button>
+	</div>
+	<!-- Catalogo - categorias -->
+	<div class="container">
+		<div class="catalog-container">
+			<br><br><br>
+			<div class="row-catalog">
+				<button class="block-catalog open-modal" id="block-catalog-item-1" onclick="changePage('beds')">
+					<h3>Camas</h3>
+				</button>
+				<button class="block-catalog open-modal" id="block-catalog-item-2" onclick="changePage('closets')">
+					<h3>Closets</h3>
+				</button>
+				<button class="block-catalog open-modal" id="block-catalog-item-3" onclick="changePage('kitchen')">
+					<h3>Cocinas</h3>
+				</button>
+				<button class="block-catalog open-modal" id="block-catalog-item-4" onclick="changePage('dining')">
+					<h3>Comedores</h3>
+				</button>
+			</div>
+			<div class="row-catalog">
+				
+				<button class="block-catalog open-modal" id="block-catalog-item-5" onclick="changePage('bath')">
+					<h3>Muebles para Baño</h3>
+				</button>
+				<button class="block-catalog open-modal" id="block-catalog-item-6" onclick="changePage('tv')">
+					<h3>Muebles para Tv</h3>
+				</button>
+				<button class="block-catalog open-modal" id="block-catalog-item-7" onclick="changePage('doors')">
+					<h3>Puertas</h3>
+				</button>
+				<button class="block-catalog open-modal" id="block-catalog-item-8" onclick="changePage('modal1')">
+					<h3>Titulo</h3>
+				</button>
+			</div>
+
+		</div>	
+	</div>
+	<div class="divider"></div>
+	<div class="container section-reasons">
+		<h3 class="tittle-reasons">Razones para preferirnos</h3>
+			
+		<div class="row">
+			<div class="box-reasons">
+				<img class="img-reasons" src="assets/image/icons/arboles.png">
+				<h4>Técnicas ecológicas</h4>
+				<div>
+					<p>Al usar maderas de produccion sostenible, insumos biodegradables y con generacion cero de residuos, nuestras tecnicas de produccion favorecen el medio ambiente.</p>
+				</div>
+			</div>
+			<div class="box-reasons">
+				<img class="img-reasons" src="assets/image/icons/confiar.png">
+				<h4>Confianza asegurada</h4>
+				<div>
+					<p>Mas del 90% de nuestros nuevos clientes vienen a nosotros por recomendación de clientes anteriores demostrando la confianza que generamos con nuestro trabajo.</p>
+				</div>
+			</div>
+			<div class="box-reasons">
+				<img class="img-reasons" src="assets/image/icons/calidad1.png">
+				<h4>Primeros en calidad</h4>
+				<div>
+					<p>Todos nuestros productos estan compuestos de madera tratada de alta calidad y elavorados de forma artesanal permitiendo perfección en los detalles.</p>
+				</div>
+			</div>
+			<div class="box-reasons">
+				<img class="img-reasons" src="assets/image/icons/martillo.png" style="padding: 18px;">
+				<h4>Instalación gratuita</h4>
+				<div>
+					<p>Todos nuestros trabajos incluyen el transporte e instalación al lugar indicado por nuestros clientes sin costo adicional o cargos de alguna clase.</p>
+				</div>
+			</div>
+		</div> <!-- /row  -->
+	</div>
+	<div class="container  us-container">
+		<div class="us-section us-text">
+			<div class="us-raper">
+				<h4 class="us-tittle">Nosotros</h4>
+				<p class="us-p">Somos una empresa tradicional con una trayectoria de más de 20 años en la elaboración de productos de carpintería y ebanistería, proporcionando elementos artesanales de calidad para hogares y empresas.</p>
+			</div>
+		</div>
+		<div class="us-section">
+			<img class="us-img" src="assets/image/main/carpintero-cuadrado.jpg">
+		</div>
+	</div>
+	<div class="container" style="height: 15px;"></div>
+	<footer>
+		<div class="container container-footer">
+
+			<div class="row row-footer">
+				
+				<div class="footer-section footer-contact">
+					<h2>Contacto</h2>
+					<div class="widget-body">
+						<p>311 503 7098<br>
+							<a href="mailto:#">some.email@somewhere.com</a><br>
+							<br>
+							Manzana 82 Casa 14 Piso 2 Barrio Modelia 1, Ibagué Tolima, Colombia
+						</p>	
+					</div>
+				</div>
+
+				<div class="footer-section footer-text">
+					<h2>Text widget</h2>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
+					</div>
+				</div>
+
+			</div> <!-- /row of widgets -->
+		</div>
+		<div class="container footer-copyright">
+			<p>Copyright © 2023, Muebles Enciso. Diseñado por <a href="" target="_blank">G&P informática y tecnología</a></p>
+		</div>
+	</footer>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/slider.js"></script>
+	<script type="text/javascript">
+		/********************************************** boton mostrar catalogo **********************************************************/
+
+		const btnShowCatalog = document.getElementById("btn-show-catalog");
+		btnShowCatalog.addEventListener("click", () => {
+			const catalogCont = document.getElementsByClassName("catalog-container")[0];
+			catalogCont.classList.toggle("catalog-container-show");
+		});
+		/******************************************* fin boton mostrar catalogo **********************************************************/
+	</script>
+</body>
+</html>

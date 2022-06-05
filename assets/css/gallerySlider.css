@@ -1,0 +1,119 @@
+/***********************************************************************************************************************/
+/********************************** estilos de la galeria de imagenes *************************************************/
+/***********************************************************************************************************************/
+
+		* {box-sizing:border-box}
+
+		/* Contenedor de las imagenes/slides */
+		.gallery-slide-box {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		  margin-top: 15px;
+		}
+
+		/* Se esconden todas las imagenes por defecto */
+		.slides {
+		  display: none;
+		}
+
+		.slider-image{
+			width:100%;
+		}
+
+		/* botones anterior y siguiente */
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  margin-top: -22px;
+		  padding: 16px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		  background-color: rgba(0,0,0,0.3);
+		}
+
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		.prev{
+			left: 0;
+		}
+
+		.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.8);
+		}
+
+		/* Caption text */
+		.text {
+		  	color: #f2f2f2;
+		  	font-size: 25px;
+		  	padding: 8px 12px;
+		  	position: absolute;
+		  	bottom: 8px;
+		  	width: 100%;
+		  	text-align: center;
+		  	/*
+		  	color: black;
+		   -webkit-text-fill-color: white;
+		   -webkit-text-stroke-width: 2px;
+		   -webkit-text-stroke-color: black;
+			*/
+			/*pos x, pos y, desenfoque, color*/
+		   text-shadow: 2px 2px 3px black;
+		}
+
+		.gallery-slider-tittle{
+			font-family: "Open sans", Helvetica, Arial;
+			font-size: 1.7em;
+			font-weight: 500;
+			margin-top: 40px;
+			margin-bottom: 30px;
+		}
+
+		/* numeros de la parte superior izq (1/1, 1/2, etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		  text-shadow: 1px 1px 2px black;
+		}
+
+		/* Puntos inferiores del slide que indican la imagen */
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+		  background-color: #717171;
+		}
+
+		/* Fading animation */
+		.fade {
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@keyframes fade {
+		  from {opacity: .4}
+		  to {opacity: 1}
+		}
+/***********************************************************************************************************************/
+/********************************** estilos de la galeria de imagenes *************************************************/
+/***********************************************************************************************************************/
