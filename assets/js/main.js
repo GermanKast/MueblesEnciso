@@ -65,17 +65,13 @@
 /************************************************** cambiar pagina ***************************************************************/
 function changePage(page){
 
-	const path = document.location.href;
-	const catalogPage = "catalog-" + page;
-	let finalPath = "";
+	const url = document.location;
+	const baseUrl = url.protocol + "//" + url.host + "/" + url.pathname.split('/')[1];
 
-	if( path.includes("index") ){
-		finalPath = path.replace('index',catalogPage);
-	}else{
-		finalPath = path + catalogPage + ".html";
-	}
+	const catalogPage = "/catalog-" + page + ".html";
+	const finalUrl = baseUrl + catalogPage;
 
-	document.location.href = finalPath;
+	document.location.href = finalUrl;
 
 }
 /*********************************************** fin cambiar pagina ***************************************************************/

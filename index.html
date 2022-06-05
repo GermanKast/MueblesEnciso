@@ -24,17 +24,17 @@
 				</div>
 			</div>
 			<div class="navbar-links" style="top: -260px;">
-				<a href="#">Inicio</a>
-				<a href="#">Catalogo</a>
-				<a href="#">Contacto</a>
+				<a href="#topId">Inicio</a>
+				<a href="#catalogId">Catalogo</a>
+				<a href="#footerId">Contacto</a>
 			</div><!--/.nav-collapse -->
 		</div>
 	</div>
 	<!-- header imagen superior -->
-	<header>
+	<header id="topId">
 		<div class="container header-container">
 			<div class="img-tittle-wraper">
-				<img src="assets/image/main/logoMEgrabado_mareda.webp" alt="">
+				<img src="assets/image/main/logoMEgrabado_mareda.webp" alt="Logo Muebles Enciso">
 				<div>
 					<h1 class="lead">MUEBLES ENCISO</h1>
 					<h2 class="tagline">Experiencia y calidad</p>
@@ -110,7 +110,7 @@
 			<span class="dot" onclick="currentSlide(7)"></span>
 		</div>
 	</div>
-	<div class="container banner-catalog">
+	<div id="catalogId" class="container banner-catalog">
 		<h2>¿Te gustaria ver nuestro catalogo completo?</h2>
 		<button id="btn-show-catalog">Click Aquí</button>
 	</div>
@@ -197,7 +197,7 @@
 		</div>
 	</div>
 	<div class="container" style="height: 15px;"></div>
-	<footer>
+	<footer id="footerId">
 		<div class="container container-footer">
 
 			<div class="row row-footer">
@@ -205,18 +205,28 @@
 				<div class="footer-section footer-contact">
 					<h2>Contacto</h2>
 					<div class="widget-body">
-						<p>311 503 7098<br>
-							<a href="mailto:#">some.email@somewhere.com</a><br>
-							<br>
-							Manzana 82 Casa 14 Piso 2 Barrio Modelia 1, Ibagué Tolima, Colombia
-						</p>	
+						<div class="footer-contact-data">
+							<img src="assets/image/icons/iconon-whatsapp-white-50x50.png" alt="logo whatsapp blanco" width="20" height="20">
+							<h3>311 503 7098</h3>
+						</div>
+						<div class="footer-contact-data">
+							<img src="assets/image/icons/icono-correo-blanco-50x50.png" alt="logo whatsapp blanco" width="20" height="20">
+							<a href="mailto:#">mueblesenciso@gmail.com</a><br>
+						</div>
+						<div class="footer-contact-data">
+							<img src="assets/image/icons/icono-localizacion1-negro-50x50.png" alt="logo whatsapp blanco" width="25" height="25">
+							<p>Manzana 82 Casa 14 Piso 2 Barrio Modelia 1</p>
+							<p>Ibagué Tolima - Colombia</p>
+						</div>
 					</div>
 				</div>
 
-				<div class="footer-section footer-text">
-					<h2>Text widget</h2>
+				<div class="footer-section footer-right">
 					<div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
+						<img src="assets/image/main/logoMEgrabado_mareda.webp" alt="logo Muebles Enciso" width="120" height="120">
+					</div>
+					<div class="footer-text">
+						<h2>Experiencia y Calidad</h2>
 					</div>
 				</div>
 

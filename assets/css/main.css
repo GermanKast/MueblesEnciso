@@ -318,6 +318,24 @@
 		padding-left: 30px;
 	}
 
+	.footer-right, .footer-contact-data{
+		display: flex;
+		/* align-items por defecto tiene el valor `stretch` */
+		flex-direction: row;
+  		flex-wrap: wrap;
+		align-items: center;
+		color: white;
+	}
+
+	.footer-contact-data > *{
+		margin-right: 10px;;
+	}
+
+	.footer-text{
+		padding-left: 30px;
+		padding-top: 30px;
+	}
+
 /***********************************************************************************************************************/
 	
 			.banner-catalog{
