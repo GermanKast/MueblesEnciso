@@ -521,3 +521,6 @@
 		}
 		.banner-catalog{height: 330px;}
 	}
+	@media all and (max-width: 425px){
+		.banner-catalog{height: 376px;}
+	}
