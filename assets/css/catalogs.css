@@ -227,45 +227,65 @@
 			}
 
 	/************************************************************************************************************************/
-			footer{
-				background: #3b1c16;
-			    padding-bottom: 15px;
-			    font-size: 12px;
-			    color: #999;
-			    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-			    line-height: 1.428571429;
-			}
+	footer{
+		background: #3b1c16;
+	    padding-top: 30px;
+	    padding-bottom: 15px;
+	    font-size: 12px;
+	    color: #999;
+	    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	    line-height: 1.428571429;
+	}
 
-			.row-footer{
-				display: flex;
-				/* align-items por defecto tiene el valor `stretch` */
-				flex-direction: row;
-		  		flex-wrap: wrap;
-			}
+	.row-footer{
+		display: flex;
+		/* align-items por defecto tiene el valor `stretch` */
+		flex-direction: row;
+  		flex-wrap: wrap;
+	}
 
-			.footer-section{
-				width: 50%;
-				text-align: left;
-			}
+	.footer-section{
+		width: 40%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-align: left;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
 
-			.footer-section > h2{
-				color: #ccc;
-			}
+	.footer-section > h2{
+		color: #ccc;
+	}
 
-			.inner-footer-section{
-				font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-				font-size: 12px;
-				line-height: 1.428571429;
-				text-align: left;
-				padding-top: 20px;
-				padding-bottom: 20px;
-				padding-right: 50px;
-				padding-left: 50px;
-			}
+	.footer-section > div{
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 12px;
+		line-height: 1.428571429;
+		text-align: left;
+	}
 
-			.footer-copyright{
-				height: 30px;
-			}
+	.footer-copyright{
+		height: 30px;
+	}
+
+	.footer-right, .footer-contact-data{
+		display: flex;
+		flex-direction: row;
+  		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.footer-contact-data > *{
+		margin-right: 10px;;
+	}
+
+	.footer-text{
+		padding-left: 30px;
+	}
+
+	.footer-contact-data > h2{
+		color: whitesmoke;
+	}
 /****************************************************** ventana modal *********************************************************/
 			:root {
 			  --lightgray: #efefef;
@@ -436,10 +456,10 @@
 				.navbar-links{width: 100%;margin: 0;padding-right: 50px;}
 				.block-catalog{width: 85%;}
 				.modal-box-img{width: 85%; height: 300px;}
+				.footer-section{width: 80%; margin-left: 10%; margin-right: 10%;}
 			}
 			@media all and (max-width: 680px){
 				.header-container{min-height: 220px; padding-top: 85px;}
-				.footer-section{width: 100%;}
 			}
 			@media all and (max-width: 580px){
 				.navbar{
@@ -455,7 +475,6 @@
 				    top: -260px;/*80*/
 				    transition: top ease-in .3s;
 				    display: flex;
-					/* align-items por defecto tiene el valor `stretch` */
 					flex-direction: column;
 			  		flex-wrap: wrap;
 			  		padding: 0;

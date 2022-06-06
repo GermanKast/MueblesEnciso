@@ -71,11 +71,12 @@
 		}
 
 		.gallery-slider-tittle{
-			font-family: "Open sans", Helvetica, Arial;
-			font-size: 1.7em;
-			font-weight: 500;
+			font-family:'Museo', sans-serif, Helvetica, Arial;
+			font-weight:700;
+			font-size:30px;
 			margin-top: 40px;
 			margin-bottom: 30px;
+			color:#717171;
 		}
 
 		/* numeros de la parte superior izq (1/1, 1/2, etc) */
