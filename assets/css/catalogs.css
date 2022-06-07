@@ -402,6 +402,10 @@
 			 	opacity: 1;
 			}
 
+			.close-modal{
+				position: fixed;
+			}
+
 			.close-modal:hover{
 				background:rgba(0,0,0,0.1);
 			}
